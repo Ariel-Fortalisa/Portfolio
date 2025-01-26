@@ -1,0 +1,215 @@
+.projects_container {
+    display: grid;
+    grid-template-columns: repeat(2, 500px);
+    justify-content: center;
+    column-gap: 1.8rem;
+}
+
+.projects_content {
+    position: relative;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: var(--container-color);
+    padding: 3rem 1rem 2rem 1rem;
+}
+
+.projects_details {
+    padding-bottom: .5rem;
+}
+
+.projects_icon {
+    display: block;
+    font-size: 2rem;
+    color: var(--title-color);
+    margin-bottom: var(--mb-1);
+}
+
+.projects_title {
+    font-size: 1.1rem;
+    margin-bottom: var(--mb-1-5);
+    text-align: center;
+    font-weight: var(--font-medium);
+    padding: 0 1rem;
+}
+
+.project-demo {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    position: absolute; 
+    bottom: 0; 
+    left: 0; 
+    right: 0; 
+    padding: 1rem 2rem; 
+}
+
+.projects_button,
+.projects_button-github {
+    color: var(--title-color);
+    font-size: var(--small-font-size);
+    display: flex; 
+    align-items: center;
+    gap: 0.25rem; 
+    cursor: pointer;
+}
+
+.projects_button-icon {
+    font-size: 1rem;
+    transition: transform 0.3s ease; /* Adds a smooth animation */
+}
+
+.projects_button:hover .projects_button-icon {
+    transform: translateX(00.25rem);
+}
+
+.projects_button-github:hover .projects_button-icon {
+    transform: translateY(-00.10rem);
+}
+
+.projects_modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: var(--z-modal);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1rem;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s;
+}
+
+.projects_modal-content {
+    width: 500px;
+    position: relative;
+    background-color: var(--container-color);
+    padding: 4.5rem 2.5rem 2.5rem;
+    border-radius: 1.5rem;
+}
+
+.projects_modal-close {
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    font-size: 1.5rem;
+    color: var(--title-color);
+    cursor: pointer;
+}
+
+.projects_modal-title,
+.projects_modal-description {
+    text-align: center;
+}
+
+.projects_modal-title {
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-medium);
+    margin-bottom: var(--mb-1);
+}
+
+.projects_modal-description {
+    font-size: var(--small-font-size);
+    padding: 0;
+    margin-bottom: var(--mb-1);
+}
+
+.projects_modal-projects {
+    row-gap: 0.75em;
+}
+
+.projects_modal-project {
+    display: flex;
+    align-items: center;
+    column-gap: 0.5rem;
+}
+
+.projects_modal-icon {
+    color: #76a004;
+    font-size: 1.1rem;
+}
+
+.projects_modal-info {
+    font-size: var(--small-font-size);
+}
+
+/* Active Modal */
+.active-modal {
+    opacity: 1;
+    visibility: visible;
+}
+
+/*============ BREAKPOINTS ============*/
+/* For large devices */
+@media screen and (max-width: 992px) {
+    .projects_container {
+        grid-template-columns: repeat(2, 380px);
+    }
+    .projects_title {
+        font-size: var(--normal-font-size);
+    }
+}
+
+/* For medium devices */
+@media screen and (max-width: 768px) {
+    .projects_container {
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: .7rem;
+    }
+
+    .projects_content {
+        padding: 3.5rem 0.5rem 1.25rem 0.5rem;
+    }
+
+    .projects_icon {
+        font-size: 1.5rem;
+    }
+}
+
+/* For small devices */
+@media screen and (max-width: 576px) {
+    .projects_modal-content {
+        padding: 4.5rem 1.5rem 2.5rem;
+    }
+
+    .projects_modal-description {
+        padding: 0;
+    }
+
+    .projects_title {
+        font-size: var(--smaller-font-size);
+        padding: 0;
+    }
+
+    .projects_details {
+        padding-bottom: 1.5rem;
+    }
+
+    .project-demo {
+        flex-wrap: wrap;
+        padding: .5rem;
+    }
+
+    .projects_button,
+    .projects_button-github{
+        font-size: var(--tiny-font-size);
+        left: 0.3rem;
+    }
+
+}
+
+/* For extra small devices */
+@media screen and (max-width: 350px) {
+    .projects_container {
+        grid-template-columns: max-content;
+    }
+
+    .projects_content {
+        padding-right: 6rem;
+    }
+
+}
+
+
