@@ -20,7 +20,7 @@ const Projects = () => {
                     <div className="projects_details">
                         <img src={Img1} alt="" className="project_img" />
                         <h3 className="projects_title">
-                            Online Ordering Web Application for Romanteaco Milk Tea Shop
+                            Online Ordering Web Application for Romanteaco Milk Tea Shophghgh
                         </h3>
                     </div>
                     <div className="project-demo">
