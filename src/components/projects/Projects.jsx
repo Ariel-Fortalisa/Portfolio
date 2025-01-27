@@ -18,14 +18,17 @@ const Projects = () => {
             description:
                 "Developed as our capstone system project that simplifies the ordering process for milk tea shops by managing transactions, automating inventory, and tracking overall sales.",
             images: [Img1, Img2, Img3, Img4, Img5],
+            technologies: ["HTML5", "CSS", "JavaScript", "Bootstrap", "PHP", "MySQL", "Hostinger"], 
         },
         {
             title: "Web-Based Sales Monitoring and Inventory System for Jack Sizzling Avenue",
             description:
                 "A Web-Based Sales Monitoring and Inventory System was developed as a freelance developer that integrated digital sales transactions to ensure smooth and error-free processing.",
             images: [Img6, Img7, Img8, Img9, Img10],
+            technologies: ["HTML5", "CSS", "JavaScript", "Bootstrap", "PHP", "MySQL"], 
         },
     ];
+    
 
     const [currentSlides, setCurrentSlides] = useState(
         projects.map(() => 0) // Initialize each project's slide index to 0
@@ -130,30 +133,12 @@ const Projects = () => {
                                 <h3 className="projects_modal-title">{project.title}</h3>
                                 <p className="projects_modal-description">{project.description}</p>
                                 <ul className="projects_modal-projects grid">
-                                    <li className="projects_modal-project">
-                                        <i className="uil uil-check-circle projects_modal-icon"></i>
-                                        <p className="projects_modal-info">HTML5</p>
-                                    </li>
-                                    <li className="projects_modal-project">
-                                        <i className="uil uil-check-circle projects_modal-icon"></i>
-                                        <p className="projects_modal-info">CSS</p>
-                                    </li>
-                                    <li className="projects_modal-project">
-                                        <i className="uil uil-check-circle projects_modal-icon"></i>
-                                        <p className="projects_modal-info">JavaScript</p>
-                                    </li>
-                                    <li className="projects_modal-project">
-                                        <i className="uil uil-check-circle projects_modal-icon"></i>
-                                        <p className="projects_modal-info">Bootstrap</p>
-                                    </li>
-                                    <li className="projects_modal-project">
-                                        <i className="uil uil-check-circle projects_modal-icon"></i>
-                                        <p className="projects_modal-info">PHP</p>
-                                    </li>
-                                    <li className="projects_modal-project">
-                                        <i className="uil uil-check-circle projects_modal-icon"></i>
-                                        <p className="projects_modal-info">MySQL</p>
-                                    </li>
+                                    {project.technologies.map((tech, techIndex) => (
+                                        <li className="projects_modal-project" key={techIndex}>
+                                            <i className="uil uil-check-circle projects_modal-icon"></i>
+                                            <p className="projects_modal-info">{tech}</p>
+                                        </li>
+                                    ))}
                                 </ul>
                             </div>
                         </div>
