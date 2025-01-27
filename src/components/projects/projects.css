@@ -25,7 +25,6 @@
 
 .projects_title {
     font-size: 1.1rem;
-    margin-top: var(--mb-1);
     margin-bottom: var(--mb-1-5);
     text-align: center;
     font-weight: var(--font-medium);
@@ -146,7 +145,8 @@
     position: relative;
     overflow: hidden;
     width: 100%;
-    max-width: 600px; /* Adjust to desired slideshow width */
+    max-width: 600px; /* Adjust the maximum width as needed */
+    height: 300px; /* Set a fixed height for the slideshow */
     margin: 0 auto; /* Center the slideshow container horizontally */
     display: flex;
     justify-content: center; /* Horizontal centering */
@@ -154,18 +154,17 @@
 }
 
 .slideshow_inner {
-    display: flex;
-    transition: transform 0.5s ease-in-out;
-    width: 100%; /* Ensure inner container fits the parent */
+    display: flex; /* Use flex to align the images side by side */
+    transition: transform 0.5s ease-in-out; /* Smooth transition for slides */
 }
 
 .slideshow_inner img {
-    width: 100%;
-    height: auto; /* Maintain aspect ratio */
-    object-fit: fill; /* Ensure consistent size within bounds */
-    display: block; /* Ensure no extra spaces around the image */
-    margin: 0 auto; /* Center the image horizontally */
+    width: 100%;           /* Ensure the image fills the container horizontally */
+    height: 100%;          /* Make the image take up the full height of the container */
+    object-fit: cover;     /* Maintain the aspect ratio, filling the container */
+    object-position: center; /* Center the image if it's cropped */
 }
+
 
 .project_img {
     width: 100%; /* Take full width of the slideshow container */

@@ -5,6 +5,11 @@ import Img2 from "../../assets/ordering(2).jpg";
 import Img3 from "../../assets/ordering(3).jpg";
 import Img4 from "../../assets/ordering(4).jpg";
 import Img5 from "../../assets/ordering(5).jpg";
+import Img6 from "../../assets/pos.jpg";
+import Img7 from "../../assets/pos(2).jpg";
+import Img8 from "../../assets/pos(3).jpg";
+import Img9 from "../../assets/pos(4).jpg";
+import Img10 from "../../assets/pos(5).jpg";
 
 const Projects = () => {
     const projects = [
@@ -18,7 +23,7 @@ const Projects = () => {
             title: "Web-Based Sales Monitoring and Inventory System for Jack Sizzling Avenue",
             description:
                 "A Web-Based Sales Monitoring and Inventory System was developed as a freelance developer that integrated digital sales transactions to ensure smooth and error-free processing.",
-            images: [Img2, Img1, Img3],
+            images: [Img6, Img7, Img8, Img9, Img10],
         },
     ];
 
