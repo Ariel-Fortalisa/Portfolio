@@ -25,6 +25,7 @@
 
 .projects_title {
     font-size: 1.1rem;
+    margin-top: var(--mb-1);
     margin-bottom: var(--mb-1-5);
     text-align: center;
     font-weight: var(--font-medium);
@@ -141,6 +142,70 @@
     visibility: visible;
 }
 
+.slideshow {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    max-width: 600px; /* Adjust to desired slideshow width */
+    margin: 0 auto; /* Center the slideshow container horizontally */
+    display: flex;
+    justify-content: center; /* Horizontal centering */
+    align-items: center; /* Vertical centering */
+}
+
+.slideshow_inner {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 100%; /* Ensure inner container fits the parent */
+}
+
+.slideshow_inner img {
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
+    object-fit: fill; /* Ensure consistent size within bounds */
+    display: block; /* Ensure no extra spaces around the image */
+    margin: 0 auto; /* Center the image horizontally */
+}
+
+.project_img {
+    width: 100%; /* Take full width of the slideshow container */
+    flex-shrink: 0; /* Prevents images from shrinking */
+    height: 100%; /* Maintain container height */
+    object-fit: cover; /* Ensures the image scales proportionally */
+}
+
+.slideshow_button {
+    position: absolute;
+    top: 50%; /* Center vertically */
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white; /* Icon color */
+    border: none; /* Remove border */
+    border-radius: 50%; /* Makes the button a perfect circle */
+    width: 40px; /* Button width */
+    height: 40px; /* Button height */
+    display: flex;
+    justify-content: center; /* Center icon horizontally */
+    align-items: center; /* Center icon vertically */
+    cursor: pointer;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Optional: Add shadow */
+    transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out;
+}
+
+.slideshow_button.prev {
+    left: 10px; /* Position for previous button */
+}
+
+.slideshow_button.next {
+    right: 10px; /* Position for next button */
+}
+
+.slideshow_button i {
+    font-size: 16px; /* Adjust icon size */
+}
+
+
+
 /*============ BREAKPOINTS ============*/
 /* For large devices */
 @media screen and (max-width: 992px) {
@@ -166,10 +231,15 @@
     .projects_icon {
         font-size: 1.5rem;
     }
+    
 }
 
 /* For small devices */
 @media screen and (max-width: 576px) {
+    .projects_container {
+        grid-template-columns: 1fr;
+    }
+    
     .projects_modal-content {
         padding: 4.5rem 1.5rem 2.5rem;
     }
@@ -189,7 +259,7 @@
 
     .project-demo {
         flex-wrap: wrap;
-        padding: .5rem;
+        padding: .5rem 1rem;
     }
 
     .projects_button,
