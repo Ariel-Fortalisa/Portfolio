@@ -18,17 +18,18 @@ const Projects = () => {
             description:
                 "Developed as our capstone system project that simplifies the ordering process for milk tea shops by managing transactions, automating inventory, and tracking overall sales.",
             images: [Img1, Img2, Img3, Img4, Img5],
-            technologies: ["HTML5", "CSS", "JavaScript", "Bootstrap", "PHP", "MySQL", "Hostinger"], 
+            technologies: ["HTML5", "CSS", "JavaScript", "Bootstrap", "PHP", "MySQL", "Hostinger"],
+            githubLink: "https://github.com/Ariel-Fortalisa/Romanteaco-Milk-Tea-Shop", // GitHub link for this project
         },
         {
             title: "Web-Based Sales Monitoring and Inventory System for Jack Sizzling Avenue",
             description:
                 "A Web-Based Sales Monitoring and Inventory System was developed as a freelance developer that integrated digital sales transactions to ensure smooth and error-free processing.",
             images: [Img6, Img7, Img8, Img9, Img10],
-            technologies: ["HTML5", "CSS", "JavaScript", "Bootstrap", "PHP", "MySQL"], 
+            technologies: ["HTML5", "CSS", "JavaScript", "Bootstrap", "PHP", "MySQL"],
+            githubLink: "https://github.com/Ariel-Fortalisa/Jack-Sizzling-Avenue", // GitHub link for this project
         },
     ];
-    
 
     const [currentSlides, setCurrentSlides] = useState(
         projects.map(() => 0) // Initialize each project's slide index to 0
@@ -110,7 +111,7 @@ const Projects = () => {
 
                             <span
                                 className="projects_button-github"
-                                onClick={() => window.open("https://github.com", "_blank")}
+                                onClick={() => window.open(project.githubLink, "_blank")}
                             >
                                 GitHub
                                 <i className="uil uil-github projects_button-icon"></i>
