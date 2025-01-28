@@ -10,3 +10,11 @@ This portfolio highlights:
 - Interactive UI: Using clean and functional interfaces.
 - Dynamic Projects: Demonstrating practical web development solutions.
 - Clean Code: Focusing on maintainability and performance optimization.
+
+## 🛠️ Technologies
+
+Languages:
+- HTML, CSS, JavaScript, PHP
+Frameworks & Libraries:
+- Bootstrap
+- React
