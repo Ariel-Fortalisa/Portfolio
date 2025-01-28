@@ -13,9 +13,21 @@ This portfolio highlights:
 
 ## 🛠️ Technologies
 
-Languages:
+##Languages:
 - HTML, CSS, JavaScript, PHP
 
-Frameworks & Libraries:
+##Frameworks & Libraries:
 - Bootstrap
 - React
+
+## 📂 Portfolio Structure
+
+- Home Page: Overview of who I am, my skills, and what I offer.
+- Projects: A showcase of web development projects, including descriptions, screenshots, and links to live demos or source code.
+- Contact: Information for connecting with me, including email and LinkedIn links.
+
+## 📧 Contact
+
+- Email: your-email@example.com
+- LinkedIn: Your LinkedIn
+- Portfolio Website: Your Website
