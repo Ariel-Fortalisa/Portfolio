@@ -13,10 +13,10 @@ This portfolio highlights:
 
 ## 🛠️ Technologies
 
-## Languages:
+**Languages:**
 - HTML, CSS, JavaScript, PHP
 
-## Frameworks & Libraries:
+**Frameworks & Libraries:**
 - Bootstrap
 - React
 
