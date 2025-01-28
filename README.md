@@ -1,6 +1,6 @@
-# React + Vite
+# Web Developer Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to my Web Developer Portfolio! 🎉 This repository showcases my work, skills, and projects as a web developer. Feel free to explore and reach out if you have any questions or opportunities!
 
 Currently, two official plugins are available:
 
