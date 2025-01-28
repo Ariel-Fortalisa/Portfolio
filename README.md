@@ -15,6 +15,7 @@ This portfolio highlights:
 
 Languages:
 - HTML, CSS, JavaScript, PHP
+
 Frameworks & Libraries:
 - Bootstrap
 - React
